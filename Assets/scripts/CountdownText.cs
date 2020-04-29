@@ -25,5 +25,6 @@ public class CountdownText : MonoBehaviour
             countdown.text = (count - i).ToString();
             yield return new WaitForSeconds(1);
         }
+        OnCountdownFinished();
     }
 }
