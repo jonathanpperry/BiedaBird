@@ -110,6 +110,5 @@ public class GameManager : MonoBehaviour
     {
         // Activated when play button is hit
         SetPageState(PageState.Countdown);
-
     }
 }
