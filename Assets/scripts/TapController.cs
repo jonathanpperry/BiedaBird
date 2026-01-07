@@ -45,7 +45,7 @@ public class TapController : MonoBehaviour
 
     void OnGameStarted()
     {
-        rigidbody.velocity = Vector3.zero;
+        rigidbody.linearVelocity = Vector3.zero;
         rigidbody.simulated = true;
     }
 
@@ -63,7 +63,7 @@ public class TapController : MonoBehaviour
         {
             tapAudio.Play();
             transform.rotation = forwardRotation;
-            rigidbody.velocity = Vector3.zero;
+            rigidbody.linearVelocity = Vector3.zero;
             rigidbody.AddForce(Vector2.up * tapForce, ForceMode2D.Force);
         }
 
